@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Vue!</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form id="app-form">
+            <input type="text" v-model="input_name" placeholder="Nome: ">
+            <input type="submit" value="Enviar" v-on:click="submitForm">
+        </form>
+        <p>Seu nome é {{ name }}</p>
+    </div>
+    <script src="app.js">
+
+<template>
+    <div>
+        <!-- Seu código Vue.js aqui -->
+    </div>
+    </template>
+
+
+    import { IFornecedorService } from './fornecedor-service';
+
+    export default {
+    // ...
+    data() {
+        return {
+        fornecedorService: null as IFornecedorService | null,
+        };
+    },
+    // ...
+    };
+
+    </script>
+</body>
+</html>
